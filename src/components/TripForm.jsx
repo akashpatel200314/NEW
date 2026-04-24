@@ -32,29 +32,8 @@ function TripForm({ trip, onTripChange, onSave }) {
               onChange={handleChange}
               placeholder="May 10 - May 14"
             />
-          </Form.Group>
+          </Form.Group>   
 
-          <Form.Group className="mb-3" controlId="budget">
-            <Form.Label>Estimated Budget</Form.Label>
-            <Form.Control
-              name="budget"
-              value={trip.budget}
-              onChange={handleChange}
-              placeholder="$750"
-            />
-          </Form.Group>
-
-          <Form.Group className="mb-3" controlId="activities">
-            <Form.Label>Activity Ideas</Form.Label>
-            <Form.Control
-              as="textarea"
-              rows={3}
-              name="activities"
-              value={trip.activities}
-              onChange={handleChange}
-              placeholder="Museums, restaurants, hiking..."
-            />
-          </Form.Group>
 
           <Button type="submit" variant="success">
             Save Draft
